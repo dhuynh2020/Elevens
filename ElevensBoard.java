@@ -132,8 +132,7 @@ public class ElevensBoard extends Board {
 			} else if(cardAt(selectedCards.get(i)).rank() == "king"){
 				hasKing = true;
 			}
-			return (hasKing && hasQueen && hasJack);
 		}
-		return false;
+		return (hasKing && hasQueen && hasJack);
 	}
 }
