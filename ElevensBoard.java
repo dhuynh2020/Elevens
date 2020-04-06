@@ -99,7 +99,7 @@ public class ElevensBoard extends Board {
 			return false; 
 		} for (int i = 0; i <selectedCards.size() - 1; i++ ){
 			for(int j = i + 1; j < selectedCards.size(); j++){
-				if(cardAt(selectedCards.get(i)).pointValue() + cardAt(selectedCards.get(j)).pointValue == 11){
+				if(cardAt(selectedCards.get(i)).pointValue() + cardAt(selectedCards.get(j)).pointValue() == 11){
 					return true; 
 				}
 			}
@@ -134,5 +134,6 @@ public class ElevensBoard extends Board {
 			}
 			return (hasKing && hasQueen && hasJack);
 		}
+		return false;
 	}
 }
